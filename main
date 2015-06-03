@@ -1,0 +1,8 @@
+#!/bin/bash
+
++USERNAME=$(echo $whoami)
++OS=$(cat /etc/*-release) 
++KERNEL=$(uname -rs) 
++PACKAGES=$(dpkg --list | wc --lines) 
++WM=$(echo $DESKTOP_SESSION) 
++FONT=$() 
